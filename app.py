@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from flask import Flask, jsonify, render_template, request, session
 from openai import OpenAI
 
-load_dotenv(r"C:\env\.env")
+load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "web-chatbot-local-secret")
